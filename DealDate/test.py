@@ -5,9 +5,10 @@ def Temp():
     try:
         fopen = open(road + r'\temp.log',encoding='UTF-8')  # 设置文件对象
         for lines in fopen.readlines():
-            Temp_Demo = lines[:-1]
-            # print(Temp_Demo)
-            Temp_list.append(int(Temp_Demo))
+            if  "CST 2020" not in str(lines):
+                Temp_Demo = lines[:-1]
+                # print(Temp_Demo)
+                Temp_list.append(int(Temp_Demo))
         fopen.close()
         # print(max(Temp_list)/1000)
         # print(min(Temp_list)/1000)
@@ -21,7 +22,7 @@ def systemMonitor():
     try:
         fopen = open(road + r'\systemMonitor.log',encoding='UTF-8')  # 设置文件对象
         for lines in fopen.readlines():
-            if "Start" not in str(lines) and "swap" not in str(lines) and "swpd" not in str(lines):
+            if "Start" not in str(lines) and "swap" not in str(lines) and "swpd" not in str(lines) and "CST 2020" not in str(lines):
                 free = lines[14:19]
                 buff = lines[20:26]
                 cache = lines[27:33]
@@ -42,7 +43,7 @@ def guardMonitor():
     try:
         fopen = open(road + r'\guardMonitor.log', encoding='UTF-8')  # 设置文件对象
         for lines in fopen.readlines():
-            if "Start" not in str(lines) and "com.moredian" in str(lines):
+            if "Start" not in str(lines) and "com.moredian" in str(lines) and "CST 2020" not in str(lines):
                 guardMonitor_Demo = lines[lines.find("M")+8:lines.find("M")+13]
                 # print(guardMonitor_Demo)
                 guardMonitor_list.append(float(guardMonitor_Demo)/6)
@@ -56,7 +57,7 @@ def guardMonitor():
         print(e)
 
 
-road = r'C:\Users\86183\Desktop\stability\data'
+road = r'C:\Users\86183\Desktop\stability\0910\150108200511KN0092'
 Temp()
 systemMonitor()
 guardMonitor()
