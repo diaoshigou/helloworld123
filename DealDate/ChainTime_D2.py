@@ -22,12 +22,13 @@ def NIR(road,NIR_list):
                 NIR_demo = lines[lines.find("cost")+11:lines.find("error count")-6]
                 # print(NIR_demo)
                 if (int(NIR_demo) < 1000):
-                    NIR_list.append(NIR_demo)
+                    NIR_list.append(int(NIR_demo))
         fopen.close()
     except Exception as e:
         print(e)
     for i in NIR_list:
-        NIR_sum = NIR_sum + int(i)
+        NIR_sum = NIR_sum + i
+        # print(i)
     return (NIR_sum,NIR_list)
 
 def FMP(road,FMP_list):
@@ -36,17 +37,16 @@ def FMP(road,FMP_list):
     try:
         fopen = open(road,encoding='UTF-8')  # 设置文件对象
         for lines in fopen.readlines():
-            if "FMP cost time" in str(lines):
-            # if "Magicmirror FMP" in str(lines):
+            if "Magicmirror FMP" in str(lines):
                 FMP_demo = lines[lines.find("cost")+11:lines.find("error count")-6]
-                # print(NIR_demo)
+                # print(FMP_demo)
                 if (int(FMP_demo) < 1000):
-                    FMP_list.append(FMP_demo)
+                    FMP_list.append(int(FMP_demo))
         fopen.close()
     except Exception as e:
         print(e)
     for i in FMP_list:
-        FMP_sum = FMP_sum + int(i)
+        FMP_sum = FMP_sum + i
     return (FMP_sum,FMP_list)
 
 def detect(road,detect_list):
@@ -58,12 +58,12 @@ def detect(road,detect_list):
                 detect_Demo = lines[lines.find("cost") + 12:-1]
                 # print(detect_Demo)
                 if (int(detect_Demo) < 2000):
-                    detect_list.append(detect_Demo)
+                    detect_list.append(int(detect_Demo))
         fopen.close()
     except Exception as e:
         print(e)
     for i in detect_list:
-        detect_sum = detect_sum + int(i)
+        detect_sum = detect_sum + i
     return (detect_sum,detect_list)
 
 def Recognize_offline(road,Recognize_offline_list):
@@ -112,12 +112,12 @@ def WARM(road,WARM_list):
                 WARM_demo = lines[lines.find("cost")+10:-1]
                 # print(NIR_demo)
                 if (int(WARM_demo) < 1000):
-                    WARM_list.append(WARM_demo)
+                    WARM_list.append(int(WARM_demo))
         fopen.close()
     except Exception as e:
         print(e)
     for i in WARM_list:
-        WARM_sum = WARM_sum + int(i)
+        WARM_sum = WARM_sum + i
     return (WARM_sum,WARM_list)
 
 def quality(road,quality_list):
@@ -131,12 +131,12 @@ def quality(road,quality_list):
                 quality_demo = lines[lines.find("cost")+10:-1]
                 # print(quality_demo)
                 if (int(quality_demo) < 1000):
-                    quality_list.append(quality_demo)
+                    quality_list.append(int(quality_demo))
         fopen.close()
     except Exception as e:
         print(e)
     for i in quality_list:
-        quality_sum = quality_sum + int(i)
+        quality_sum = quality_sum + i
     return (quality_sum,quality_list)
 
 
@@ -145,23 +145,26 @@ def setkind():
     k = []
     if chVarNIR.get() == int(1):
         k.append('1')
-    if chVardetect.get() == int(1):
+    if chVarFMP.get() == int(1):
         k.append('2')
-    if chVarRecongnize_offline.get() == int(1):
+    if chVardetect.get() == int(1):
         k.append('3')
+    if chVarRecongnize_offline.get() == int(1):
+        k.append('4')
     if chVarRecongnize_online.get() == int(1):
-        k.append("4")
+        k.append("5")
     if chVarWarm.get() == int(1):
-        k.append('5')
+        k.append('6')
     if chVarquality.get() == int(1):
-        k.append("6")
+        k.append("7")
     if chVarALL_chain.get() == int(1):
-        k.append('7')
+        k.append('8')
 
     return k
 
 def Ttest():
     NIR_list = []
+    FMP_list = []
     detect_list = []
     Recognize_offline_list = []
     Recognize_online_list = []
@@ -176,18 +179,26 @@ def Ttest():
                 road = Entry_road.get() + '\\' + allDir
                 (NIR_sum,NIR_list) = NIR(road,NIR_list)
             if len(NIR_list) == 0:
-                print("未找到NIR/fmp记录")
+                print("未找到NIR记录")
             else:
-                print("NIR耗时：" + str(round(NIR_sum / len(NIR_list),2)) + "ms（" + max(NIR_list) + "ms-"+ min(NIR_list) + "ms)")
+                print("NIR耗时：" + str(round(NIR_sum / len(NIR_list),2)) + "ms（" + str(max(NIR_list)) + "ms-"+ str(min(NIR_list)) + "ms)")
         if i == '2':
+            for allDir in pathDir:
+                road = Entry_road.get() + '\\' + allDir
+                (FMP_sum,FMP_list) = FMP(road,FMP_list)
+            if len(FMP_list) == 0:
+                print("未找到FMP记录")
+            else:
+                print("FMP耗时：" + str(round(FMP_sum / len(FMP_list),2)) + "ms（" + max(FMP_list) + "ms-"+ min(FMP_list) + "ms)")
+        if i == '3':
             for allDir in pathDir:
                 road = Entry_road.get() + '\\' + allDir
                 (detect_sum,detect_list) = detect(road,detect_list)
             if len(detect_list) == 0:
                 print("未找到detect记录")
             else:
-                print("detect耗时：" + str(round(detect_sum / len(detect_list),2)) + "ms(" + max(detect_list) + "ms-" + min(detect_list) + "ms)")
-        if i == '3':
+                print("detect耗时：" + str(round(detect_sum / len(detect_list),2)) + "ms(" + str(max(detect_list)) + "ms-" + str(min(detect_list)) + "ms)")
+        if i == '4':
             for allDir in pathDir:
                 road = Entry_road.get() + '\\' + allDir
                 (Recognize_offline_sum,Recognize_offline_list) = Recognize_offline(road,Recognize_offline_list)
@@ -195,7 +206,7 @@ def Ttest():
                 print("未找到离线Recognize记录")
             else:
                 print("Recognize耗时：" + str(round(Recognize_offline_sum / len(Recognize_offline_list),2)) + "ms(" + str(round(float(max(Recognize_offline_list)),2)) + "ms-" + str(round(float(min(Recognize_offline_list)),2)) + "ms)")
-        if i == '4':
+        if i == '5':
             for allDir in pathDir:
                 road = Entry_road.get() + '\\' + allDir
                 (Recognize_online_sum,Recognize_online_list) = Recognize_online(road,Recognize_online_list)
@@ -203,32 +214,32 @@ def Ttest():
                 print("未找到在线Recognize记录")
             else:
                 print("Recognize耗时：" + str(round(Recognize_online_sum / len(Recognize_online_list),2)) + "ms(" + str(round(float(max(Recognize_online_list)),2)) + "ms-" + str(round(float(min(Recognize_online_list)),2)) + "ms)")
-        if i == '5':
+        if i == '6':
             for allDir in pathDir:
                 road = Entry_road.get() + '\\' + allDir
                 (Warm_sum,Warm_list) = WARM(road,Warm_list)
             if len(Warm_list) == 0:
                 print("未找到Warm记录")
             else:
-                print("Warm平均时间：" + str(round(Warm_sum / len(Warm_list),2)) + "ms(" + max(Warm_list) + "ms-" + min(Warm_list) + "ms)")
-        if i == '6':
+                print("Warm平均时间：" + str(round(Warm_sum / len(Warm_list),2)) + "ms(" + str(max(Warm_list)) + "ms-" + str(min(Warm_list)) + "ms)")
+        if i == '7':
             for allDir in pathDir:
                 road = Entry_road.get() + '\\' + allDir
                 (quality_sum,quality_list) = quality(road,quality_list)
             if len(quality_list) == 0:
                 print("未找到quality记录")
             else:
-                print("quality平均时间：" + str(round(quality_sum / len(quality_list),2)) + "ms(" + max(quality_list) + "ms-" + min(quality_list) + "ms)")
-        if i == '7':
-            if "3" in k:
+                print("quality平均时间：" + str(round(quality_sum / len(quality_list),2)) + "ms(" + str(max(quality_list)) + "ms-" + str(min(quality_list)) + "ms)")
+        if i == '8':
+            if "4" in k:
                 if len(Recognize_offline_list) != 0:
                     ALL_Time_ave_offline = round(NIR_sum / len(NIR_list),2) + round(detect_sum / len(detect_list),2) + round(Recognize_offline_sum / len(Recognize_offline_list),2) + round(Warm_sum / len(Warm_list),2) + round(quality_sum / len(quality_list),2)
                     ALL_Time_max_offline = float(max(NIR_list)) + float(max(detect_list)) + round(float(max(Recognize_offline_list)),2) + float(max(Warm_list)) + float(max(quality_list))
                     ALL_Time_min_offline = float(min(NIR_list)) + float(min(detect_list)) + round(float(min(Recognize_offline_list)),2) + float(min(Warm_list)) + float(min(quality_list))
-                    print("离线全链路耗时：" + str(round(ALL_Time_ave_offline,2)) + "ms(" + str(ALL_Time_max_offline) + "ms-" + str(ALL_Time_min_offline) + "ms)")
+                    print("离线全链路耗时：" + str(round(ALL_Time_ave_offline,2)) + "ms(" + str(round(ALL_Time_max_offline,2)) + "ms-" + str(round(ALL_Time_min_offline,2)) + "ms)")
                 else:
                     print("无离线识别记录！")
-            if "4" in k:
+            if "5" in k:
                 if len(Recognize_online_list) != 0:
                     ALL_Time_ave = round(NIR_sum / len(NIR_list), 2) + round(detect_sum / len(detect_list), 2) + round(
                         Recognize_online_sum / len(Recognize_online_list), 2) + round(Warm_sum / len(Warm_list),
@@ -256,7 +267,7 @@ chVarquality = tkinter.IntVar()
 chVarRecongnize_online = tkinter.IntVar()
 chVarALL_chain = tkinter.IntVar()
 
-t.set(r'C:\Users\86183\Desktop\logs\logs\D2')
+t.set(r'C:\Users\86183\Desktop\logs\logs\D2PLUS')
 
 
 label_env = tkinter.Label(root, text="设备CPU占用率测试",borderwidth=5).grid(row=0, column=1,columnspan=4)
