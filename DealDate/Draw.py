@@ -122,7 +122,6 @@ def PMIC_TEMP(path,files,Date,Data,C):
                 if "pmicTemp" in i:
                     Data.append(round(float(str(i)[i.find("pmicTemp")+9:])/1000,2))
                     Date.append(D)
-    # print(Data)
     tick_spacing = 10
     fig,ax_PMIC_TEMP = plt.subplots(1, 1)
     ax_PMIC_TEMP.plot(Date, Data)
