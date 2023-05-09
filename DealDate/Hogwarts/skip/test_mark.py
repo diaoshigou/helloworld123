@@ -1,7 +1,6 @@
 
 import pytest
 
-
 def double(a):
     return a * 2
 
