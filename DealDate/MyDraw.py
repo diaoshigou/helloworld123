@@ -76,9 +76,9 @@ def APK_CPU(path,files,Date,Data,C):
             D = (str(data)[5:13])
             C.append(D)
             for i in data.split("\n"):
-                if "com.moredian.entrance.guard" in i and "u0_a28" in i and "S" in i :
+                if "com.moredian.entrance.guard" in i and "u0_a15" in i:
                     # print(i)
-                    Data.append(float(str(i)[i.find("S")+2:i.find("S")+6])/6)
+                    Data.append(float(i[i.find("com.moredian.entrance.guard") - 21 :i.find("com.moredian.entrance.guard")-17]))
                     Date.append(D)
     # print(Data)
     tick_spacing = 10
@@ -131,7 +131,7 @@ def PMIC_TEMP(path,files,Date,Data,C):
     plt.ylabel("℃",fontsize=12,rotation=0,labelpad=10)
     plt.show()
 
-path = r"E:\Moredian\tools\stability\20230428_160620\com.moredian.mdservice\DumpDevStateService"
+path = r"E:\Moredian\tools\stability\20230804_161731\com.moredian.mdservice\DumpDevStateService"
 files = os.listdir(path)
 
 Free_MEM(path,files,Date=[],Data=[],C=[])

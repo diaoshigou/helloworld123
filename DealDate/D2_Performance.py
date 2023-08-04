@@ -128,7 +128,7 @@ def chain():
 
 
 
-path = r"C:\Users\86183\Desktop\logs\logs"
+path = r"C:\Users\Administrator\Desktop\DumpDevStateService\DumpDevStateService"
 # CPU_D2()
 # APK_cpu_D2()
 # Sysmem_D2()
