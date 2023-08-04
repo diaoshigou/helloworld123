@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9f49fa28-2b44-45a8-90fa-68f9a62ad1b7" name="Default Changelist" comment="新增Petclinic">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyTest/SQL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyTest/tes_class.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyTest/test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyTest/test3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DealDate/D2_Performance.py" beforeDir="false" afterPath="$PROJECT_DIR$/DealDate/D2_Performance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DealDate/Draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/DealDate/MyDraw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyTest/test_class.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_case_test_imput.coverage" NAME="pytest for test_case.test_imput Coverage Results" MODIFIED="1684123852890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_case_test_input.coverage" NAME="pytest for test_case.test_input Coverage Results" MODIFIED="1684124351192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_in_test_skipif_py.coverage" NAME="pytest in test_skipif.py Coverage Results" MODIFIED="1683539253051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_case_test_Add.coverage" NAME="pytest for test_case.test_Add Coverage Results" MODIFIED="1684129666613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_add_test_get_excel.coverage" NAME="pytest for test_add.test_get_excel Coverage Results" MODIFIED="1683624341875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/read_excel/testcase" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_fixturedemo1_TestDemo.coverage" NAME="pytest for test_fixturedemo1.TestDemo Coverage Results" MODIFIED="1683691074667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$skipif.coverage" NAME="skipif Coverage Results" MODIFIED="1683539218428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_xfail_test_xfail.coverage" NAME="pytest for test_xfail.test_xfail Coverage Results" MODIFIED="1683539713319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/skip" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_skip_test_aaa.coverage" NAME="pytest for test_skip.test_aaa Coverage Results" MODIFIED="1683536441034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_xfail_test_aaa.coverage" NAME="pytest for test_xfail.test_aaa Coverage Results" MODIFIED="1683539612004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/skip" />
+    <SUITE FILE_PATH="coverage/helloworld123$Str.coverage" NAME="Str拼接 Coverage Results" MODIFIED="1684393265617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_study_test_search.coverage" NAME="pytest for study.test_search Coverage Results" MODIFIED="1683253414066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate" />
+    <SUITE FILE_PATH="coverage/helloworld123$demo__1_.coverage" NAME="demo (1) Coverage Results" MODIFIED="1683624958061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_in_test_add_py__1_.coverage" NAME="pytest in test_add.py (1) Coverage Results" MODIFIED="1683625335377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/read_csv/testcase" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_case_test_add.coverage" NAME="pytest for test_case.test_add Coverage Results" MODIFIED="1684126886880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_skipif_test_case3.coverage" NAME="pytest for test_skipif.test_case3 Coverage Results" MODIFIED="1683538987802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_case_Test_01_test_01.coverage" NAME="pytest for test_case.Test_01.test_01 Coverage Results" MODIFIED="1684134360415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3" />
+    <SUITE FILE_PATH="coverage/helloworld123$study.coverage" NAME="study Coverage Results" MODIFIED="1683254700047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate" />
+    <SUITE FILE_PATH="coverage/helloworld123$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1684120315988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_case_Test_01_test_02.coverage" NAME="pytest for test_case.Test_01.test_02 Coverage Results" MODIFIED="1684134317574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_in_test_add_py.coverage" NAME="pytest in test_add.py Coverage Results" MODIFIED="1683624163695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/read_excel/testcase" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_case_Test_Login.coverage" NAME="pytest for test_case.Test_Login Coverage Results" MODIFIED="1684130511024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_in_test_case_py.coverage" NAME="pytest in test_case.py Coverage Results" MODIFIED="1684129017329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_skipif_test_case1.coverage" NAME="pytest for test_skipif.test_case1 Coverage Results" MODIFIED="1683538957584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_fixturedemo1_test_get.coverage" NAME="pytest for test_fixturedemo1.test_get Coverage Results" MODIFIED="1683627989827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$demo.coverage" NAME="demo Coverage Results" MODIFIED="1683623652201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/read_excel/data" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_fixturedemo1_test_buy.coverage" NAME="pytest for test_fixturedemo1.test_buy Coverage Results" MODIFIED="1683628019985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_in_test_fixturedemo1_py.coverage" NAME="pytest in test_fixturedemo1.py Coverage Results" MODIFIED="1683627994600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_add_TestWithEXCEL.coverage" NAME="pytest for test_add.TestWithEXCEL Coverage Results" MODIFIED="1684117126506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/read_excel/testcase" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_skip_test_bbb.coverage" NAME="pytest for test_skip.test_bbb Coverage Results" MODIFIED="1683536563677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$Draw.coverage" NAME="Draw Coverage Results" MODIFIED="1682678170071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_skipif_test_case2.coverage" NAME="pytest for test_skipif.test_case2 Coverage Results" MODIFIED="1683538979402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_conftest_test_input.coverage" NAME="pytest for conftest.test_input Coverage Results" MODIFIED="1684120757843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_add_TestWithEXCEL__1_.coverage" NAME="pytest for test_add.TestWithEXCEL (1) Coverage Results" MODIFIED="1683625984613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/read_json/testcase" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_xfail_test_hello4.coverage" NAME="pytest for test_xfail.test_hello4 Coverage Results" MODIFIED="1683539828363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/skip" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_fixture_param_test_demo1.coverage" NAME="pytest for test_fixture_param.test_demo1 Coverage Results" MODIFIED="1684119559670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_test_add_test_login.coverage" NAME="pytest for test_add.test_login Coverage Results" MODIFIED="1684124567087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate/Hogwarts/read_excel/testcase" />
+    <SUITE FILE_PATH="coverage/helloworld123$pytest_for_study_test_mark_more.coverage" NAME="pytest for study.test_mark_more Coverage Results" MODIFIED="1683511833853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DealDate" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/DealDate/Draw.py" />
+        <option value="$PROJECT_DIR$/DealDate/study.py" />
+        <option value="$PROJECT_DIR$/DealDate/pytest.ini.py" />
+        <option value="$PROJECT_DIR$/DealDate/pytest.ini" />
+        <option value="$PROJECT_DIR$/DealDate/test_study.py" />
+        <option value="$PROJECT_DIR$/DealDate/test_mark.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/test_skip.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/.pytest_cache/skipif.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/skipif.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/test_skipif.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/skip/test_xfail.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/skip/test_mark.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/read_excel/func/operation.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/read_excel/data/demo.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/demo.csv" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/demo.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/read_csv/data/params.csv" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/read_csv/testcase/test_add.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/demo.json" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/demo_json.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/read_json/data/params.json" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/read_json/testcase/test_add.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/test_fixturedemo1.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/test_fixture_param.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3/function.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3/conftest.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/read_excel/testcase/test_add.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/conftest.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3/func/Add.py" />
+        <option value="$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3/test_case.py" />
+        <option value="$PROJECT_DIR$/DealDate/Str拼接.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="256" />
+    <option name="y" value="132" />
+    <option name="width" value="1500" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectId" id="2PzdAEiyH3chQPSiDnHvSL8IXDR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="helloworld123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helloworld123" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helloworld123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helloworld123" type="462c0819:PsiDirectoryNode" />
+              <item name="DealDate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helloworld123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helloworld123" type="462c0819:PsiDirectoryNode" />
+              <item name="DealDate" type="462c0819:PsiDirectoryNode" />
+              <item name="Hogwarts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helloworld123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helloworld123" type="462c0819:PsiDirectoryNode" />
+              <item name="DealDate" type="462c0819:PsiDirectoryNode" />
+              <item name="Hogwarts" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="helloworld123" type="b2602c69:ProjectViewProjectNode" />
+              <item name="helloworld123" type="462c0819:PsiDirectoryNode" />
+              <item name="DealDate" type="462c0819:PsiDirectoryNode" />
+              <item name="Hogwarts" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeWork" type="462c0819:PsiDirectoryNode" />
+              <item name="L3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35002637" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Demo" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\software\Anaconda3\envs\helloworld123\DealDate\Hogwarts" />
+      <recent name="D:\software\Anaconda3\envs\helloworld123\DealDate\Hogwarts\HomeWork\L3" />
+      <recent name="D:\software\Anaconda3\envs\helloworld123\DealDate\Hogwarts\skip" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\software\Anaconda3\envs\helloworld123\DealDate\Hogwarts\read_json" />
+      <recent name="D:\software\Anaconda3\envs\helloworld123\DealDate\Hogwarts\read_csv" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Mem_Cal_D2">
+    <configuration name="ChainTime_D2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="helloworld" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DealDate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DealDate/ChainTime_D2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="D2_Performance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="helloworld" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DealDate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DealDate/D2_Performance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Mem_Cal_D2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="helloworld" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DealDate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DealDate/Mem_Cal_D2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MyDraw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="helloworld" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DealDate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DealDate/MyDraw.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="find_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="helloworld" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DealDate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DealDate/find_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Mem_Cal_D2" />
+        <item itemvalue="Python.find_data" />
+        <item itemvalue="Python.ChainTime_D2" />
+        <item itemvalue="Python.MyDraw" />
+        <item itemvalue="Python.D2_Performance" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f49fa28-2b44-45a8-90fa-68f9a62ad1b7" name="Default Changelist" comment="" />
+      <created>1682668725444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682668725444</updated>
+      <workItem from="1682668726519" duration="9581000" />
+      <workItem from="1683252900988" duration="2345000" />
+      <workItem from="1683511772572" duration="6753000" />
+      <workItem from="1683599166228" duration="8366000" />
+      <workItem from="1683690355789" duration="1325000" />
+      <workItem from="1683879267266" duration="1348000" />
+      <workItem from="1684114066287" duration="12577000" />
+      <workItem from="1684285904057" duration="599000" />
+      <workItem from="1684316291101" duration="599000" />
+      <workItem from="1684390394498" duration="153000" />
+      <workItem from="1684390560215" duration="1598000" />
+      <workItem from="1684393169173" duration="1200000" />
+      <workItem from="1684394408388" duration="38000" />
+      <workItem from="1684401831542" duration="555000" />
+      <workItem from="1684402409992" duration="4000" />
+    </task>
+    <task id="LOCAL-00001" summary="新增画图脚本">
+      <created>1682678208338</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682678208338</updated>
+    </task>
+    <task id="LOCAL-00002" summary="新增画图脚本">
+      <created>1682678280277</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682678280277</updated>
+    </task>
+    <task id="LOCAL-00003" summary="新增画图脚本">
+      <created>1683253115467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683253115467</updated>
+    </task>
+    <task id="LOCAL-00004" summary="新增画图脚本">
+      <created>1683527083720</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683527083720</updated>
+    </task>
+    <task id="LOCAL-00005" summary="新增Hogwarts文件夹，变更文件位置">
+      <created>1683535616537</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683535616537</updated>
+    </task>
+    <task id="LOCAL-00006" summary="新增excel、csv、json、fixturedemo的运用">
+      <created>1683628120382</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683628120382</updated>
+    </task>
+    <task id="LOCAL-00007" summary="新增excel、csv、json、fixturedemo的运用">
+      <created>1684146726882</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684146726882</updated>
+    </task>
+    <task id="LOCAL-00008" summary="新增excel、csv、json、fixturedemo的运用">
+      <created>1684750866606</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684750866606</updated>
+    </task>
+    <task id="LOCAL-00009" summary="新增Petclinic">
+      <created>1685512148367</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685512148367</updated>
+    </task>
+    <task id="LOCAL-00010" summary="新增Petclinic">
+      <created>1685512957721</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685512957721</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_test_case_py - 2023.05.15 at 13h 36m 14s.xml">
+      <configuration name="pytest in test_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_case_py - 2023.05.15 at 13h 36m 58s.xml">
+      <configuration name="pytest in test_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_case_test_Add - 2023.05.15 at 13h 40m 03s.xml">
+      <configuration name="pytest for test_case.test_Add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_case_test_Add - 2023.05.15 at 13h 40m 30s.xml">
+      <configuration name="pytest for test_case.test_Add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_case_test_Add - 2023.05.15 at 13h 47m 47s.xml">
+      <configuration name="pytest for test_case.test_Add" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_case_Test_Login - 2023.05.15 at 14h 01m 52s.xml">
+      <configuration name="pytest for test_case.Test_Login" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_case_Test_01_test_01 - 2023.05.15 at 15h 04m 48s.xml">
+      <configuration name="pytest for test_case.Test_01.test_01" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_case_Test_01_test_02 - 2023.05.15 at 15h 05m 18s.xml">
+      <configuration name="pytest for test_case.Test_01.test_02" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_case_Test_01_test_01 - 2023.05.15 at 15h 05m 23s.xml">
+      <configuration name="pytest for test_case.Test_01.test_01" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_case_Test_01_test_01 - 2023.05.15 at 15h 06m 01s.xml">
+      <configuration name="pytest for test_case.Test_01.test_01" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="47041000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="256" y="132" width="1500" height="1000" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39722222" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290993" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4792148" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32871974" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增画图脚本" />
+    <MESSAGE value="新增Hogwarts文件夹，变更文件位置" />
+    <MESSAGE value="新增excel、csv、json、fixturedemo的运用" />
+    <MESSAGE value="新增Petclinic" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增Petclinic" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DealDate/D2P_Performance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-895" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/D2_Performance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#100#1238#0" />
+            <element signature="e#1262#2026#0" />
+            <element signature="e#2049#2763#0" />
+            <element signature="e#2786#3576#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2299">
+          <caret line="123" column="34" selection-start-line="123" selection-start-column="34" selection-end-line="123" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/.pytest_cache/skipif.py" />
+    <entry file="file://$PROJECT_DIR$/DealDate/ChainTime_D2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/inline.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/skip/test_xfail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/skip/test_skipif.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="15" selection-start-line="7" selection-start-column="17" selection-end-line="15" selection-end-column="15" />
+          <folding>
+            <element signature="e#1#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/skip/test_skip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_excel/data/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_json/data/demo.py" />
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_csv/data/demo.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_json/data/params.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/test_fixturedemo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/pytest.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/demo.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/demo_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/demo_json.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/test_fixture_param.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_excel/testcase/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_json/func/operation.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3/func/Add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/HomeWork/L3/test_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Str拼接.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/demo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_json/testcase/test_add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_excel/func/operation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_excel/testcase/test_add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_csv/func/operation.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_csv/testcase/test_add.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/skip/test_mark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DealDate/Hogwarts/read_csv/data/params.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
