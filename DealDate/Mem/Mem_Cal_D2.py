@@ -7,7 +7,7 @@ from tkinter import *
 import tkinter
 
 wb = Workbook() # 创建文件对象
-road = r"E:\Moredian\tools\stability\20230804_172519\com.moredian.mdservice\DumpDevStateService"
+road = r"C:\Users\Administrator\Desktop\stability\20231218_103309_D3\com.moredian.mdservice\DumpDevStateService"
 ws = wb.active
 q = w = a = s = d = f = g = 2
 # ws["A1"] = "系统时间"
@@ -283,7 +283,7 @@ def quality_D3(road, eachFile=eachFile):
                     CPU_radio_list.append(float(CPU_radio)/8)
                     a += 1
 
-                if "u0_a16" in str(lines) and "com.moredian.entrance.guard" in str(lines):    # D2PLUS
+                if "u0_a34" in str(lines) and "com.moredian.entrance.guard" in str(lines):    # D2PLUS
                     apk_cpu_radio = float(lines[lines.find("M") + 10 :lines.find("com.moredian.entrance.guard")-17])
                     # Write(apk_cpu_radio_list_row, apk_cpu_radio)
                     apk_cpu_radio_list.append(int(apk_cpu_radio)/8)
@@ -313,13 +313,85 @@ def quality_D3(road, eachFile=eachFile):
             print(e)
     CPU_radio = "CPU总占用率：" + str(round(sum(CPU_radio_list)/len(CPU_radio_list),2)) + "%(" + str(round(min(CPU_radio_list),2)) +"% - " + str(round(max(CPU_radio_list),2)) + "%)"
     apk_cpu_radio = "apk占用cpu率：" + str(round(sum(apk_cpu_radio_list)/len(apk_cpu_radio_list),2)) + "%(" + str(round(min(apk_cpu_radio_list),2)) +"% - " + str(round(max(apk_cpu_radio_list),2)) + "%)"
-    # print("CPU总占用率：" + str(round(sum(CPU_radio_list)/len(CPU_radio_list),2)) + "%(" + str(round(min(CPU_radio_list),2)) +"% - " + str(round(max(CPU_radio_list),2)) + "%)")
-    # print("apk占用cpu率：" + str(round(sum(apk_cpu_radio_list)/len(apk_cpu_radio_list),2)) + "%(" + str(round(min(apk_cpu_radio_list),2)) +"% - " + str(round(max(apk_cpu_radio_list),2)) + "%)")
-    # print("系统剩余内存：" + str(round(sum(Free_RAM_list) / len(Free_RAM_list), 2)) + "kb(" + str(
-    #             min(Free_RAM_list)) + "kb - " + str(max(Free_RAM_list)) + "kb)")
-    # print("apk占用内存：" + str(round(sum(apk_RAM_list)/len(apk_RAM_list),2)) + "kb(" + str(min(apk_RAM_list)) +"kb - " + str(max(apk_RAM_list)) + "kb)")
-    # print("设备温度：" + str(round(sum(Temp_list)/len(Temp_list),2)) + "℃(" + str(min(Temp_list)) +"℃ - " + str(max(Temp_list)) + "℃)")
+    print("CPU总占用率：" + str(round(sum(CPU_radio_list)/len(CPU_radio_list),2)) + "%(" + str(round(min(CPU_radio_list),2)) +"% - " + str(round(max(CPU_radio_list),2)) + "%)")
+    print("apk占用cpu率：" + str(round(sum(apk_cpu_radio_list)/len(apk_cpu_radio_list),2)) + "%(" + str(round(min(apk_cpu_radio_list),2)) +"% - " + str(round(max(apk_cpu_radio_list),2)) + "%)")
+    print("系统剩余内存：" + str(round(sum(Free_RAM_list) / len(Free_RAM_list), 2)) + "kb(" + str(
+                min(Free_RAM_list)) + "kb - " + str(max(Free_RAM_list)) + "kb)")
+    print("apk占用内存：" + str(round(sum(apk_RAM_list)/len(apk_RAM_list),2)) + "kb(" + str(min(apk_RAM_list)) +"kb - " + str(max(apk_RAM_list)) + "kb)")
+    print("设备温度：" + str(round(sum(Temp_list)/len(Temp_list),2)) + "℃(" + str(min(Temp_list)) +"℃ - " + str(max(Temp_list)) + "℃)")
     tuple = (CPU_radio,apk_cpu_radio)
+    return tuple
+
+def quality_T10V(road, eachFile=eachFile):
+    System_time_list = []
+    CPU_radio_list = []
+    apk_cpu_radio_list = []
+    Free_RAM_list = []
+    apk_RAM_list = []
+    Temp_list = []
+
+    global q,w,a,s,d,f,g
+    pathDir = eachFile(road)
+    for eachDir in pathDir:
+        try:
+
+            fopen = open(road + "\\" + eachDir, encoding='UTF-8')  # 设置文件对象
+            for lines in fopen.readlines():
+
+                if "camera" in str(lines):
+                    System_time = lines[:lines.find("camera") - 1]
+                    # ws[System_time_list_row] = str(System_time)
+                    # System_time_list.append(System_time)
+                    q += 1
+
+                if "com.moredian.entrance.guard (pid" in str(lines) and "moredianMem" in str(lines):
+                    Argus_pid = lines[lines.find("pid") + 4:lines.find("/") - 1]
+                    # Write(Argus_pid_List_row, Argus_pid)
+                    w += 1
+
+                if "600%" in str(lines):
+                    CPU_radio = (600 - int(lines[lines.find("sys") + 4:lines.find("idle")-1]))   # T10V
+                    # Write(CPU_radio_list_row, CPU_radio)
+                    CPU_radio_list.append(float(CPU_radio)/6)
+                    a += 1
+
+                if "u0_a9" in str(lines) and "com.moredian.entrance.guard" in str(lines):    # D2PLUS
+                    apk_cpu_radio = float(lines[lines.find("M") + 9 :lines.find("com.moredian.entrance.guard")-17])
+                    # Write(apk_cpu_radio_list_row, apk_cpu_radio)
+                    apk_cpu_radio_list.append(int(apk_cpu_radio)/6)
+                    s += 1
+
+                if "Free RAM" in str(lines):
+                    Free_RAM = int(str(lines[lines.find("RAM:") + 7:lines.find(",")])+str(lines[lines.find(",") + 1:lines.find("K")]))
+                    # Write(Free_RAM_list_row, Free_RAM)
+                    Free_RAM_list.append(int(Free_RAM))
+                    d += 1
+
+                if "moredianMem" in str(lines):
+                    apk_RAM = int(str(int((lines[lines.find(":") + 1:lines.find(",")])+str(lines[lines.find(",") + 1:lines.find("K")]))))  #D2P
+                    # Write(apk_RAM_list_row, apk_RAM)
+                    apk_RAM_list.append(int(apk_RAM))
+                    f += 1
+
+                if "getTempResult" in str(lines):
+                    Temp = lines[lines.find("|") + 7:lines.find("|") + 12]
+                    # Write(Temp_list_row, int(Temp) / 1000)
+                    Temp_list.append(int(Temp)/1000)
+                    g += 1
+
+            fopen.close()
+
+        except Exception as e:
+            print(e)
+    CPU_radio = "CPU总占用率：" + str(round(sum(CPU_radio_list)/len(CPU_radio_list),2)) + "%(" + str(round(min(CPU_radio_list),2)) +"% - " + str(round(max(CPU_radio_list),2)) + "%)"
+    # apk_cpu_radio = "apk占用cpu率：" + str(round(sum(apk_cpu_radio_list)/len(apk_cpu_radio_list),2)) + "%(" + str(round(min(apk_cpu_radio_list),2)) +"% - " + str(round(max(apk_cpu_radio_list),2)) + "%)"
+    print("CPU总占用率：" + str(round(sum(CPU_radio_list)/len(CPU_radio_list),2)) + "%(" + str(round(min(CPU_radio_list),2)) +"% - " + str(round(max(CPU_radio_list),2)) + "%)")
+    # print("apk占用cpu率：" + str(round(sum(apk_cpu_radio_list)/len(apk_cpu_radio_list),2)) + "%(" + str(round(min(apk_cpu_radio_list),2)) +"% - " + str(round(max(apk_cpu_radio_list),2)) + "%)")
+    print("系统剩余内存：" + str(round(sum(Free_RAM_list) / len(Free_RAM_list), 2)) + "kb(" + str(
+                min(Free_RAM_list)) + "kb - " + str(max(Free_RAM_list)) + "kb)")
+    print("apk占用内存：" + str(round(sum(apk_RAM_list)/len(apk_RAM_list),2)) + "kb(" + str(min(apk_RAM_list)) +"kb - " + str(max(apk_RAM_list)) + "kb)")
+    print("设备温度：" + str(round(sum(Temp_list)/len(Temp_list),2)) + "℃(" + str(min(Temp_list)) +"℃ - " + str(max(Temp_list)) + "℃)")
+    # tuple = (CPU_radio,apk_cpu_radio)
     return tuple
 
 def finddata():
@@ -332,7 +404,7 @@ def finddata():
 
 
 
-# quality_D3(road)
+quality_D3(road)
 # quality_D2A(road)
 # quality_D2C(road)
 # quality_D2P(road)

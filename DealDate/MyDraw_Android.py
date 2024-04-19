@@ -55,7 +55,7 @@ def CPU(path,files,Date,Data,C):
             for i in data.split("\n"):
                 if "%cpu" in i :
                     # print(i)
-                    Data.append(round(int(str(i)[i.find("sys")+4:i.find("idle")-1])/6,2))
+                    Data.append(round((600-int(str(i)[i.find("sys")+4:i.find("idle")-1]))/6,2))
                     Date.append(D)
     # print(Data)
     tick_spacing = 10
@@ -76,9 +76,9 @@ def APK_CPU(path,files,Date,Data,C):
             D = (str(data)[5:13])
             C.append(D)
             for i in data.split("\n"):
-                if "com.moredian.entrance.guard" in i and "u0_a15" in i:
+                if "com.moredian.entrance.guard" in i and "u0_a17" in i and "channel" not in i:
                     # print(i)
-                    Data.append(float(i[i.find("com.moredian.entrance.guard") - 21 :i.find("com.moredian.entrance.guard")-17]))
+                    Data.append(round(float(i[i.find("com.moredian.entrance.guard") - 21 :i.find("com.moredian.entrance.guard")-17])/6,2))
                     Date.append(D)
     # print(Data)
     tick_spacing = 10
@@ -131,7 +131,7 @@ def PMIC_TEMP(path,files,Date,Data,C):
     plt.ylabel("℃",fontsize=12,rotation=0,labelpad=10)
     plt.show()
 
-path = r"E:\Moredian\tools\stability\20230804_161731\com.moredian.mdservice\DumpDevStateService"
+path = r"E:\Moredian\tools\stability\logs\DumpDevStateService"
 files = os.listdir(path)
 
 Free_MEM(path,files,Date=[],Data=[],C=[])

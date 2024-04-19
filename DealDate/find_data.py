@@ -30,9 +30,6 @@ def readfile(name,sum):
     fopen.close()
     return sum
 
-
-
-
 def finddata():
     lb.delete(0, END)
     Path_D = entry_dealfile.get()
@@ -72,9 +69,6 @@ def finddata():
             lb.insert(END,e)
     except Exception as e:
         lb.insert(END,e)
-
-
-
 
 
 root = Tk()
