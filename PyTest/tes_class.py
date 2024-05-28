@@ -1,27 +1,25 @@
-import os
-from time import sleep
+import paramiko
 
-from appium import webdriver
+# SSH连接参数
+hostname = '192.168.7.201'
+port = 22
+username = 'root'
+password = 'moredian@1'
 
+# Shell脚本路径
+script_path = '/root/test/script.sh'
 
-# server 启动参数
-desired_capabilities = {}
-# 设备信息
-desired_capabilities['platformName'] = 'Android'
-# desired_caps['platformVersion'] = '13'
-desired_capabilities['deviceName'] = '192.168.3.27:39349'
-# # app的信息
-desired_capabilities['appPackage'] = 'com.alibaba.android.rimet'
-desired_capabilities['appActivity'] = 'com.alibaba.android.rimet.biz.LaunchHomeActivity'
+# 建立SSH连接
+ssh_client = paramiko.SSHClient()
+ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh_client.connect(hostname, port, username, password)
 
-# 声明我们的driver对象
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_capabilities)
+# 执行Shell脚本
+stdin, stdout, stderr = ssh_client.exec_command(f'bash {script_path}')
+output = stdout.read().decode('utf-8')
 
+# 打印输出
+print(output)
 
-os.popen("adb shell input tap 560 1780")
-sleep(3)
-os.popen("adb shell input tap 311 2170")
-sleep(3)
-os.popen("adb shell input text '19106767703'")
-
-# driver.find_element(str = "e67dab9c-c42e-4048-b4b7-0e7b8b0bb5dd",value="下一步").click()
+# 关闭SSH连接
+ssh_client.close()
